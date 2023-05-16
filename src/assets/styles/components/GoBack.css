@@ -1,0 +1,25 @@
+.GoBack {
+    position: absolute;
+    top: 1.2em;
+    left: 1.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    
+}
+#arrow-left {
+    width: 12px;
+    align-self: flex-end;
+    color: white;
+}
+#go-back {
+    color: white;
+    z-index: 2;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

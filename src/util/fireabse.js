@@ -34,10 +34,11 @@ const firebaseConfig = {
 };
 
 // Initialize Firebase
-const app = initializeApp(firebaseConfig);
-const analytics = getAnalytics(app);
-const db = getFirestore(app);
-const gooleProvider = new GoogleAuthProvider();
+export const app = initializeApp(firebaseConfig);
+export const auth = getAuth(app);
+export const db = getFirestore(app);
+
+export const gooleProvider = new GoogleAuthProvider();
 
 export const signInWithGoogle = async () => {
     try {
@@ -105,5 +106,4 @@ export {
     createUserWithEmailAndPassword, 
     signInWithEmailAndPassword, 
     sendPasswordResetEmail,
-    db,
 };

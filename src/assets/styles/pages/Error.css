@@ -1,0 +1,15 @@
+.Error-Title {
+    background-color: var(--Navy);
+    height: 100px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.Error {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    text-align: center;
+}
