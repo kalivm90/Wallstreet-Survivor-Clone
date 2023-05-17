@@ -1,4 +1,8 @@
 .Register {
+    --infoColor: #231745;
+    --labelColor: #5b6570;
+    --inputPalceholderColor: rgb(205, 205, 205);
+
     display: flex;
     justify-content: center;
     align-items: center;
@@ -6,8 +10,9 @@
 }
 .Register-Container {
     min-width: 600px;
-    height: 500px;
+    min-height: max-content;
     box-shadow: 1px 2px 6px rgb(149, 149, 149);
+    padding-bottom: 100px;
 }
 .Register-Logo {
     position: relative;
@@ -37,7 +42,7 @@
     align-self: flex-start;
     font-style: italic;
     font-size: .9em;
-    color: #57575e;
+    color: var(--labelColor);
 }
 #login-redirect {
     align-self: flex-end;
@@ -47,4 +52,14 @@
     background-color: var(--Navy);
     border: none;
     color: white;
+}
+/* FORM */
+.Register-Form  {
+    width: 100%;
+    display: flex;
+    gap: 20px;
+}
+.Form-Info {
+    font-size: 14px;
+    color: var(--infoColor);
 }

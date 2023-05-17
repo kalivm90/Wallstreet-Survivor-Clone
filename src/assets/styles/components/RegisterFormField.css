@@ -1,0 +1,82 @@
+.Field {
+    --fieldWidth: 280px;
+}
+
+.grid-x {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: -10px;
+}
+
+.Field-Label {
+    color: var(--labelColor);
+    line-height: 1em;
+    font-size: 1rem;
+    justify-self: center;
+    align-self: center;
+}
+
+.Field-Field {
+    height: 2em;
+    margin: 0 0 1em;
+    border: 1px solid #d0dadd;
+    border-radius: .2rem;
+    background-color: white;
+    font-size: 1rem;
+    font-weight: normal;
+    padding-left: 10px;
+}
+
+.Fieldinput::placeholder {
+    color: rgb(205, 205, 205);
+}
+
+select:focus {
+    outline: none;
+    border: 1px solid rgb(115, 115, 115);
+}
+
+input:focus {
+    outline :none;
+    border: 1px solid rgb(115, 115, 115);
+    background-color: #ffffe0;
+}
+label[for="student"] {
+    color: var(--infoColor);
+    font-size: .8em;
+    font-weight: bold;
+    justify-self: start;
+    padding-left: 10px;
+}
+
+.radio {
+    float: left;
+    clear: none;
+}
+
+.radio div {
+    background-color: blue;
+}
+
+.radio label {
+    float: left;
+    clear: none;
+    display: block;
+    padding: 0px 1em 0px 8px;
+}
+
+input[type="radio"],
+input.radio {
+    float: left;
+    clear: none;
+    margin: 2px 0 0 2px;
+}
+
+#country {
+    width: 280px;
+}
+
+/* last combo was too close to top sibling  */
+.grid-x:last-child {
+    margin-top: 10px;
+}
